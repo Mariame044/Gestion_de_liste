@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <header> 
+        <h1>Ajouter des taches</h1>
+    </header> -->
+   <div class="formulaire">
+    <form>
+        <h1>Ajouter des taches</h1>
+        <label for="insert" >Tache:
+            <input type="text" class="insert" id="insert" placeholder="ajouter une tache" aria-label="ajouter une tache">
+        </label>
+        <label for="date" >Date:
+            <input type="date" class="date" id="date" >
+        </label>
+            <label for="option1">Priorité:
+                <select name="priorite" id="option1" >
+                <option value="Primaire">Primaire</option>
+                <option value="secondaire">secondaire</option>
+                </select>
+            </label>
+            <label for="option2">Statuts:
+                <select name="statut" id="option2" >
+                <option value="completed">Complet</option>
+                <option value="incomplete">Incomplet</option>
+                </select>
+            </label>
+            <button id="input-button" onclick="addTask()">Ajouter</button>           
+    </form>
+
+   </div>
+   <h1 id = "Alerte" >Liste des taches</h1>
+  
+   <div class="bloc">
+   
+    <ul class="liste" id="liste">
+       
+    </ul>
+    </div>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>

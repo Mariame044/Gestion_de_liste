@@ -1,0 +1,199 @@
+:root{
+    --back-color-pr:rgb(8, 6, 133);
+    --back-color-se:#ffffff;
+    --back-color-te:#000000;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background: var(--back-color-se);
+    /* display: flex; */
+   
+}
+/* label{
+    padding: 40px;
+} */
+
+ /* Style pour la liste des tâches */
+#liste {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Style pour chaque élément de la liste des tâches */
+#liste li {
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Style pour le texte de la tâche */
+.task-text {
+    font-size: 16px;
+}
+
+/* Style pour les boutons "Modifier" et "Supprimer" */
+.edit-btn, .delete-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Style pour les boutons "Modifier" et "Supprimer" au survol */
+.edit-btn:hover, .delete-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Style pour le bloc d'alerte */
+#Alerte {
+    color: red;
+    display: none; /* Masque le bloc d'alerte par défaut */
+}
+
+.bloc{
+    max-width: 500px;
+    margin: 120px auto;
+    padding: 20px;
+    background-color: var(--back-color-se);
+    border-radius: 8px;
+   
+    box-shadow: 0 10px 40px rgb(0, 0, 0, 0.1);
+    
+}
+.formulaire {
+    max-width: 600px;
+    margin: 120px auto;
+    padding: 20px;
+    background-color: var(--back-color-se);
+    border-radius: 8px;
+   
+    box-shadow: 0 10px 40px rgb(0, 0, 0, 0.1);
+    
+}
+
+.li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:var(--back-color-te);
+  margin: 10px 0;
+  border: 1px solid var(--back-color-se);
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 10px 40px rgb(0, 0, 0, 0.1);
+
+}
+ul{
+    list-style: none;
+   
+
+}
+
+
+
+
+.insert, .date, .option1, .option2{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--back-color-pr);
+    font-size: 20px;
+    outline: none;
+    }
+    /* .ajouter{
+        border: none;
+        border-radius: 5px;
+        background-color: var(--back-color-pr);
+        outline: none;
+        font-size: 20px;
+        color: var(--back-color-se);
+        cursor: pointer;
+
+    } */
+
+/* Style pour le corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style pour l'en-tête */
+h1 {
+    
+    color: var(--back-color-pr);
+    text-align: center;
+    padding: 10px;
+}
+
+/* Style pour le titre */
+h1 {
+    margin: 0;
+}
+
+/* Style pour le conteneur du formulaire */
+.formulaire {
+    margin: 20px auto;
+    width: 50%;
+    max-width: 400px;
+}
+
+/* Style pour les labels */
+label {
+    display: block;
+    
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Style pour les input et select */
+input,
+select {
+    width: 60%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+   
+}
+
+/* Style pour le bouton */
+#input-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Style pour la liste des tâches */
+.liste {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Style pour chaque élément de la liste des tâches */
+.liste li {
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Style pour le bloc d'alerte */
+.bloc {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
