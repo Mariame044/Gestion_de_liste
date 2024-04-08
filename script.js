@@ -1,7 +1,9 @@
 $(document).ready(function() {
   // Cette fonction est appelée lorsque le DOM est entièrement chargé et prêt à être manipulé
 
-  // Charge la liste de tâches depuis localStorage lors du chargement de la page
+  // La fonction `loadTasks()` est appelée au chargement de la page pour récupérer 
+//   les tâches stockées dans le localStorage et les afficher dans la liste.
+
   loadTasks();
 
   // Gestionnaire d'événement pour le bouton "Add"
@@ -22,6 +24,9 @@ $(document).ready(function() {
       }
   });
 
+
+
+  
   // Gestionnaire d'événement pour le bouton "Supprimer"
   $(document).on('click', '.delete-btn', function() {
       $(this).closest('li').remove(); // Supprime l'élément parent du bouton cliqué (la tâche)
