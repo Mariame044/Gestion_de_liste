@@ -4,7 +4,7 @@ $(document).ready(function() {
   // La fonction `loadTasks()` est appelée au chargement de la page pour récupérer 
 //   les tâches stockées dans le localStorage et les afficher dans la liste.
 
-  loadTasks();
+  loadTasks();    
 
   // Gestionnaire d'événement pour le bouton "Add"
   $('#input-button').on('click', function(event) {
