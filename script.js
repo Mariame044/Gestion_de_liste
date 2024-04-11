@@ -6,12 +6,18 @@ $(document).ready(function() {
 
   loadTasks();    
 
+  
   // Gestionnaire d'événement pour le bouton "Add"
   $('#input-button').on('click', function(event) {
       event.preventDefault(); // Empêche le rechargement de la page lorsqu'on clique sur le bouton
       addTask(); // Appel de la fonction pour ajouter une tâche
       saveTasks(); // Sauvegarder la liste de tâches après chaque ajout
   });
+//   $(document).on('change', '.task-checkbox', function() {
+//     var listItem = $(this).closest('li'); // Sélectionne l'élément parent de la case à cocher
+//     listItem.toggleClass('completed'); // Ajoute ou supprime la classe "completed" pour indiquer que la tâche est complétée
+//     saveTasks(); // Sauvegarde l'état de la tâche après chaque changement
+// });
 
   // Gestionnaire d'événement pour le bouton "Modifier"
   $(document).on('click', '.edit-btn', function() {
@@ -36,7 +42,7 @@ $(document).ready(function() {
 
   // Crée une nouvelle ligne de tableau avec les détails de la tâche
   
-
+  
 $('#tasksBody').append(tableRow); // Ajoute la ligne au corps du tableau
   // Fonction pour ajouter une tâche
   function addTask() {
@@ -44,21 +50,22 @@ $('#tasksBody').append(tableRow); // Ajoute la ligne au corps du tableau
       var date = $('#date').val(); // Récupère la valeur du champ de date
       var filtre1 = $('#option1').val(); // Récupère la valeur du champ de saisie
       var filtre2 = $('#option2').val();
+      
+// Vérifie si tous les champs obligatoires sont remplis
+if (task === '' || date === '' || filtre1 === '' || filtre2 === '') {
+    // Affiche un message d'alerte
+    alert('Veuillez remplir tous les champs obligatoires.');
+    return; // Arrête la fonction si un champ obligatoire est vide
+}
 
-      // Vérifie si le champ de saisie est vide
-      if(task.trim() === '') {
-          $('#Alerte').text('Veuillez entrer une tâche').fadeIn(); // Affiche un message d'alerte
-          setTimeout(function() {
-              $('#Alerte').fadeOut(); // Masque le message d'alerte après 2 secondes
-          }, 2000);
-          return; // Arrête la fonction si le champ de saisie est vide
-      }
+      
 
       // Crée un élément de liste avec le texte de la tâche, la date et les boutons "Modifier" et "Supprimer"
       var listItem = $('<li>').html('<span class="task-text">' + task + ' - ' + date + ' - ' +filtre1 +  ' - ' + filtre2 + '</span>' +
           '<button class="edit-btn">Modifier</button>' +
           '<button class="delete-btn">Supprimer</button>');
       $('#liste').append(listItem); // Ajoute l'élément à la liste
+
   }
 
   // Fonction pour sauvegarder la liste de tâches dans localStorage
