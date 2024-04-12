@@ -7,43 +7,44 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- <header> 
-        <h1>Ajouter des taches</h1>
-    </header> -->
+    <header> 
+       
+        <h1>Gestion des taches  <img src="tache.png" ></h1>
+    </header>
    <div class="formulaire">
-    <form>
-        <h1>Ajouter des taches</h1>
-        <label for="insert" >Tache:
+        <form>
+            <h1>Ajouter des taches</h1>
+            <label for="insert" >Tache:</label>
             <input type="text" class="insert" id="insert" placeholder="ajouter une tache" aria-label="ajouter une tache">
-        </label>
-        <label for="date" >Date:
-            <input type="date" class="date" id="date" >
-        </label>
-            <label for="option1">Priorité:
-                <select name="priorite" id="option1" >
-                <option value="">choisir une option </option>
-                <option value="Primaire">Primaire</option>
-                <option value="secondaire">secondaire</option>
-                </select>
-            </label>
-            <label for="option2">Statuts:
-                <select name="statut" id="option2" >
-                <option value="">choisir une option </option>
-                <option value="completed">Complet</option>
-                <option value="incomplete">Incomplet</option>
-                </select>
-            </label>
-            <button id="input-button" onclick="addTask()">Ajouter</button>           
-    </form>
+            <label for="date" >Date: </label>
+                <input type="date" class="date" id="date" >
+        
+                <label for="option1">Priorité:  </label>
+                    <select name="priorite" id="option1" >
+                    <option value="">choisir une option </option>
+                    <option value="Primaire">Primaire</option>
+                    <option value="secondaire">secondaire</option>
+                    </select>
+            
+                <label for="option2">Statuts:</label>
+                    <select name="statut" id="option2" >
+                    <option value="">choisir une option </option>
+                    <option value="completed">Complet</option>
+                    <option value="incomplete">Incomplet</option>
+                    </select>
+                
+                <button id="input-button" onclick="addTask()">Ajouter</button>           
+        </form>
 
-   </div>
+    </div>
    <h1 id = "Alerte" >Liste des taches</h1>
   
    <div class="bloc">
    
-    <ul class="liste" id="liste">
+        <ul class="liste" id="liste">
        
-    </ul>
+        </ul>
+    
     </div>
    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 

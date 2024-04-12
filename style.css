@@ -67,6 +67,33 @@ body{
     display: none; /* Masque le bloc d'alerte par défaut */
 }
 
+
+
+
+
+
+
+header {
+    background-color: #f0f0f0; /* Couleur de fond */
+    padding: 20px; /* Espace intérieur */
+    text-align: center; /* Alignement du texte au centre */
+}
+
+header h1 {
+    margin: 0; /* Supprime les marges par défaut du titre */
+    font-size: 24px; /* Taille de la police */
+    color: #333; /* Couleur du texte */
+}
+
+header img {
+    vertical-align: middle; /* Alignement vertical de l'image au centre */
+    margin-left: 5px; /* Marge à gauche pour l'image */
+    width: 20px; /* Largeur de l'image */
+}
+
+
+
+
 .bloc{
     max-width: 500px;
     margin: 120px auto;
@@ -77,17 +104,28 @@ body{
     box-shadow: 0 10px 40px rgb(0, 0, 0, 0.1);
     
 }
+
 .formulaire {
-    max-width: 600px;
-    margin: 120px auto;
     padding: 20px;
+    margin: 20px auto;
+    width: 50%;
+    max-width: 400px;
     background-color: var(--back-color-se);
     border-radius: 8px;
-   
     box-shadow: 0 10px 40px rgb(0, 0, 0, 0.1);
-    
+    text-align: center; /* Centrer les éléments à l'intérieur du formulaire */
 }
 
+.formulaire input,
+.formulaire select {
+    width: calc(80% - 10px); /* Largeur de 60% moins la largeur des marges */
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: left; /* Alignement du texte à gauche */
+    box-sizing: border-box; /* Inclure la bordure et le remplissage dans la largeur */
+}
 .li{
   display: flex;
   justify-content: space-between;
@@ -115,6 +153,8 @@ ul{
     border: 1px solid var(--back-color-pr);
     font-size: 20px;
     outline: none;
+    
+    
     }
     
 /* Style pour le corps de la page */
@@ -138,11 +178,12 @@ h1 {
 }
 
 /* Style pour le conteneur du formulaire */
-.formulaire {
+/* .formulaire {
     margin: 20px auto;
     width: 50%;
     max-width: 400px;
-}
+   
+} */
 
 /* Style pour les labels */
 label {
@@ -150,7 +191,7 @@ label {
     
     margin-bottom: 10px;
     font-weight: bold;
-    text-align: center;
+    
 }
 
 /* Style pour les input et select */
@@ -162,8 +203,11 @@ select {
     border: 1px solid #ccc;
     border-radius: 5px;
     
+    
+   
    
 }
+
 
 /* Style pour le bouton */
 #input-button:hover {
@@ -209,3 +253,24 @@ select {
     background-color: #f0f0f0;
     border-radius: 5px;
 }
+/* Styles des différents éléments de la tâche */
+.task-name {
+    font-weight: bold;
+}
+
+.task-date {
+    color: #666;
+    margin-left: 10px;
+}
+
+.task-priority {
+    color: #007bff;
+    margin-left: 10px;
+}
+
+.task-status {
+    color: #28a745;
+    margin-left: 10px;
+}
+
+
